@@ -1,0 +1,46 @@
+doctype
+html
+	head
+		title Suyeun Lee Portfolio
+		link(href="css/modal.css", rel="stylesheet")
+		link(href="css/styles.css", rel="stylesheet")
+
+	body
+		.nav-top-wrap
+			.nav-top
+				h1: a(href="/") Good Morning, Sean!
+				a.link-resume(href="http://goodmorningsean.com/down/resume_suyeunlee.pdf") Download Resume
+
+
+		.nav-links-wrap
+			ul.nav-links
+				li.link-corporate: a(href="#") Corporate Sites
+				li.link-games: a(href="#") Games
+				li.link-facebook: a(href="#") Facebook
+				li.link-ecommerce: a(href="#") E-commerce Sites
+				li.link-flash: a(href="#") Flash Animation
+
+		.page-content
+			ul.projects
+				li
+					img(src="http://placekitten.com/g/150/150")
+					a.info(href="#mindlinq", data-filename="mindlinq", data-number="7")
+						h2 MindLinq
+						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+						.button View Details
+					a.button(href="google.com", target="_blank") View Live
+
+
+				li
+					img(src="http://placekitten.com/g/300/300")
+					a.info(href="#another", data-filename="ac", data-number="3")
+						h2 Another Company
+						p Blah blah blah
+						.button Details
+
+		.footer-wrap
+			.footer Good Morning, Sean!
+
+		script(src="//code.jquery.com/jquery-2.0.3.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js")
+		script(src="js/scripts.js")

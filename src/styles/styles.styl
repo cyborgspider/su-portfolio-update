@@ -1,0 +1,210 @@
+//Imports
+@import 'nib'
+@import 'jeet'
+//Mixins
+normalize-css()
+
+//Variables
+$yellow = #faee4e
+$red    = #d80000
+
+//Styles
+body
+    font   12px/18px Verdana
+    color  #ddd
+    height 100%
+    
+a
+    text-decoration none
+
+.nav-top-wrap
+    background #363636
+    box-shadow inset 0 -4px 4px 0 #181818
+    height     67px
+    width      100%
+
+.nav-links-wrap
+    background $red
+    width      100%
+    height     48px
+    box-shadow 0 0 3px 1px #181818
+    border     solid 1px #ff4200
+
+.nav-top
+    width    960px
+    margin   0 auto
+    position relative
+  
+    & > h1
+        font       normal 32px Georgia,Times,serif
+        float      left
+        margin-top 14px
+    
+    & > h1 > a
+      color           #fefefe
+      text-decoration none
+
+.link-resume
+    width       63px
+    height      56px
+    background  url(../img/link-resume.png) no-repeat
+    float       left
+    text-indent -9999px
+    margin-left 12px
+    display     block
+      
+      &:hover
+        background-position 100% 0
+
+.nav-links
+    width    960px
+    height   56px
+    margin   0 auto
+    overflow hidden
+    padding  0
+  
+    & > li
+        float      left
+        height     41px
+        background url(../img/nav-sprite.png) no-repeat
+        
+    & > li > a
+      display     block
+      width       100%
+      height      100%
+      text-indent -9999px
+
+.link-corporate
+    width               137px
+    background-position 0 0
+    margin-right        68px
+    &:hover
+        background-position -171px 0
+
+.link-games
+    width               171px
+    background-position 0 -41px !important
+    margin-right        32px
+    &:hover
+        background-position -171px -41px !important
+
+.link-facebook
+    width               145px
+    background-position 0 -82px !important
+    margin-right        54px
+    &:hover
+        background-position -171px -82px !important
+
+.link-ecommerce
+    width               145px
+    background-position 0 -124px !important
+    margin-right        56px
+    &:hover
+        background-position -171px -124px !important
+
+.link-flash
+    width               137px
+    background-position 0 -164px !important
+    &:hover
+        background-position -171px -164px !important
+
+
+.projects
+    clearfix()
+    list-style none
+    margin     0
+    padding    10px 0
+    overflow   hidden
+    
+    & > li
+        position   relative
+        min-height 300px
+        column(1/4, gutter:.8)
+        
+    & > li > img
+        height     auto
+        width      100%
+        text-align center
+
+    & > li:hover > .info
+    & > li:hover > .button
+        opacity 1
+        
+
+.info
+    position   absolute
+    top        0
+    bottom     0
+    left       0
+    right      0
+    padding    10px
+    background rgba(0,0,0,0.8)
+    opacity    0
+    z-index    2
+    transition opacity 0.2s ease-in-out
+    box-sizing border-box
+    & > h2
+        color       $red
+        font-size   16px
+        font-weight normal
+        text-align  center
+    & > p
+        color #fff
+        text-align center
+        font-size 11px
+        padding 0 10px 0 10px
+        
+    & > .button
+        bottom  42px
+        opacity 1
+
+.button
+    background    $red
+    border-radius 3px
+    color         #FFF
+    font-size     11px
+    position      absolute
+    left          40px
+    right         40px
+    z-index       2
+    text-align    center
+    bottom        10px
+    border-radius 3px
+    opacity       0
+    padding       4px 0
+    transition    opacity 0.2s ease-in-out
+
+
+.footer-wrap
+    background $red
+    height     30px
+    position   relative
+    width      100%
+    clear      both
+    border-top 1px solid #ff4200
+
+.footer
+    width       1000px
+    padding-top 6px
+    margin      0 auto
+    text-align  center
+    font-size   11px
+    width       100%
+
+.modal-content
+    background    white
+    border-radius 2px
+    padding       20px 30px
+    text-align    center
+    max-width     600px
+    margin        20px auto
+    
+    & > h2
+        color          black
+        text-transform uppercase
+
+    & > img
+        display block
+        margin 0 auto 20px
+        
+        
