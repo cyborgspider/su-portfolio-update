@@ -11,7 +11,7 @@
 			imageFilename  = $this.attr('data-filename'),
 			imgArray = [];
 
-		for (var i = 0; i < numberOfImages ; i++){
+		for (var i = 1; i <= numberOfImages ; i++){
 			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
 		}
 
