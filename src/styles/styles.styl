@@ -65,65 +65,32 @@ a
   
     & > li
         float      left
-        height     41px
-        background url(../img/nav-sprite.png) no-repeat
         
-    & > li > a
-      display     block
-      width       100%
-      height      100%
-      text-indent -9999px
-
-.link-corporate
-    width               137px
-    background-position 0 0
-    margin-right        68px
-    &:hover
-        background-position -171px 0
-
-.link-games
-    width               171px
-    background-position 0 -41px !important
-    margin-right        32px
-    &:hover
-        background-position -171px -41px !important
-
-.link-facebook
-    width               145px
-    background-position 0 -82px !important
-    margin-right        54px
-    &:hover
-        background-position -171px -82px !important
-
-.link-ecommerce
-    width               145px
-    background-position 0 -124px !important
-    margin-right        56px
-    &:hover
-        background-position -171px -124px !important
-
-.link-flash
-    width               137px
-    background-position 0 -164px !important
-    &:hover
-        background-position -171px -164px !important
+    &         > li > a
+      display block
+      width   100%
+      height  100%
+      color   white
 
 
 .projects
     clearfix()
     list-style none
     margin     0
-    padding    10px 0
+    padding    30px
     overflow   hidden
     
     & > li
         position   relative
-        min-height 300px
-        column(1/4, gutter:.8)
+        width 15%
+        float left
+        margin-right 20px
+        margin-bottom 20px
         
     & > li > img
-        height     auto
+        height     100%
         width      100%
+        display block
         text-align center
 
     & > li:hover > .info
@@ -137,7 +104,7 @@ a
     bottom     0
     left       0
     right      0
-    padding    10px
+    padding    20px
     background rgba(0,0,0,0.8)
     opacity    0
     z-index    2
@@ -196,7 +163,7 @@ a
     border-radius 2px
     padding       20px 30px
     text-align    center
-    max-width     600px
+    max-width     780px
     margin        20px auto
     
     & > h2
@@ -204,6 +171,8 @@ a
         text-transform uppercase
 
     & > img
+        width 100%
+        height auto
         display block
         margin 0 auto 20px
         
