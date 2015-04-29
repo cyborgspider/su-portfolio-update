@@ -10,9 +10,12 @@ $red    = #d80000
 
 //Styles
 body
-    font   12px/18px Verdana
+    font-size   12px
+    line-height 18px 
+    font-family 'Source Sans Pro', Verdana, sans-serif
     color  #ddd
     height 100%
+    background #f3f3f3
     
 a
     text-decoration none
@@ -37,7 +40,8 @@ a
     position relative
   
     & > h1
-        font       normal 32px Georgia,Times,serif
+        font       normal 32px 
+        font-family 'Source Sans Pro', Verdana, sans-serif
         float      left
         margin-top 14px
     
@@ -80,13 +84,15 @@ a
     clearfix()
     list-style none
     margin     0
-    padding    0 5px
+    padding    50px 100px
     
     & > li
         position   relative
         width      100%
+        background #FFF
+        padding 5px
         float      left
-        border     5px solid #fff
+        border     15px solid #f3f3f3
         box-sizing border-box
         
         @media screen and (min-width:480px)
@@ -96,11 +102,12 @@ a
             width 20%
             
         @media screen and (min-width:1600px)
-            width 10%            
+            width 14%            
         
     & > li > img
         height     100%
         width      100%
+        box-shadow 5px 5px 5px #c7c7c7
         display block
         text-align center
 
@@ -129,7 +136,7 @@ a
     & > p
         color #fff
         text-align center
-        font-size 11px
+        font-size 12px
         padding 0 10px 0 10px
         
     & > .button
@@ -171,11 +178,11 @@ a
 
 .modal-content
     background    white
-    border-radius 2px
-    padding       20px 30px
+    border-radius 10px
+    padding       50px 100px
     text-align    center
     max-width     780px
-    margin        20px auto
+    margin        10px auto
     
     & > h2
         color          black
@@ -185,6 +192,6 @@ a
         width 100%
         height auto
         display block
-        margin 0 auto 20px
+        margin 0 auto 50px
         
         
