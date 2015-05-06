@@ -8,239 +8,254 @@ html
 
 	body
 		.nav-top-wrap
-			.nav-top
+			.container
 				h1: a(href="/") Good Morning, Sean!
-				a.link-resume(href="http://goodmorningsean.com/down/resume_suyeunlee.pdf") Download Resume
 
+				ul.social-links
+					li
+						a(href="#"): img(src="img/logo-behance.png")
+					li
+						a(href="#"): img(src="img/logo-linkedin.png")
 
-		.nav-links-wrap
-			ul.nav-links
-				li: a(href="#") Browse all
-				li: a(href="#") Corporate site
-				li: a(href="#") Computer Game site
-				li: a(href="#") Visual work
-				li: a(href="#") Personal
+				ul.nav-links
+					li: a.active(href="#hero") Intro
+					li: a(href="#projects") Portfolio
+					li: a(href="#") Experience
 
 		.page-content
-			ul.projects
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/cfes/cover.jpg")
-					a.info(href="#cfes", data-filename="cfes", data-number="13")
-						h2 CrossFire Español
-						p Computer game site
-						p UI design, Styleguide, Creative direction, Play button creation
-						.button View Details
+			#hero
+			.hero
+				.container
+					.counter-box
+						p This site is evolving
+						.count-number <span class="count">40</span>%
 
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/lostsaga/cover.jpg")
-					a.info(href="#lostsaga", data-filename="lostsaga", data-number="21")
-						h2 Lost SAGA North America
-						p Computer game site
-						p UI design, Styleguide, Creative direction, Play button creation
-						.button View Details
+					.left-col
+						h1 Hello, my name is Suyeun Lee.
+						p I love being a web designer. Ever since I started my career, I am greatly inspired when users interact with my work. There are countless visual approaches and strategies to take when approaching a problem, whether its selling a product, providing entertainment, or filtering through tons of information. What seems complicated can be streamlined with a user-centered approach. I love that designers connect with people using sight, emotion and logic in order to communicate a message. Moving forward, I wish to expand my knowledge about UX, content strategy and SEO to help individuals and businesses thrive. There's always much more to learn and discover!
+					.right-col Placeholder
 
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/grandchase/cover.jpg")
-					a.info(href="#grandchase", data-filename="grandchase", data-number="20")
-						h2 Grand Chase North America
-						p Computer game site
-						p UI design, Styleguide, Creative direction, Play button creation
-						.button View Details
+			#projects
+			.container
+				ul.projects
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/cfes/cover.jpg")
+						a.info(href="#cfes", data-filename="cfes", data-number="13")
+							h2 CrossFire Español
+							p Computer game site
+							p UI design, Styleguide, Creative direction, Play button creation
+							.button View Details
 
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/FSFSAofficial/cover.jpg")
-					a.info(href="#FSFSAofficial", data-filename="FSFSAofficial", data-number="12")
-						h2 Futebol Mania Brazil &mdash; Official
-						p Computer game site
-						p UI design, Styleguide, Creative direction
-						.button View Details
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/lostsaga/cover.jpg")
+						a.info(href="#lostsaga", data-filename="lostsaga", data-number="21")
+							h2 Lost SAGA North America
+							p Computer game site
+							p UI design, Styleguide, Creative direction, Play button creation
+							.button View Details
 
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/FSFSA-teaser/cover.jpg")
-					a.info(href="#FSFSA-teaser", data-filename="FSFSA-teaser", data-number="2")
-						h2 Futebol Mania Brazil &mdash; Teaser
-						p  Computer game site
-						p UI design, Styleguide, Creative direction
-						.button View Details
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/grandchase/cover.jpg")
+						a.info(href="#grandchase", data-filename="grandchase", data-number="20")
+							h2 Grand Chase North America
+							p Computer game site
+							p UI design, Styleguide, Creative direction, Play button creation
+							.button View Details
 
-				li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
-					img(src="img/farawaykingdom/cover.jpg")
-					a.info(href="#farawaykingdom", data-filename="farawaykingdom", data-number="3")
-						h2 Faraway Kingdom Mobile game site
-						p Mobile game promotion site
-						p computer game, UI design, Styleguide, Creative direction, Play button creation, 2014
-						.button View Details
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/FSFSAofficial/cover.jpg")
+						a.info(href="#FSFSAofficial", data-filename="FSFSAofficial", data-number="12")
+							h2 Futebol Mania Brazil &mdash; Official
+							p Computer game site
+							p UI design, Styleguide, Creative direction
+							.button View Details
 
-				li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
-					img(src="img/fb_wondercruise/cover.jpg")
-					a.info(href="#fb_wondercruise", data-filename="fb_wondercruise", data-number="7")
-						h2 Facebook Game &mdash; Wonder Cruise
-						p UI for Facebook game
-						p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
-						.button View Details
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/FSFSA-teaser/cover.jpg")
+						a.info(href="#FSFSA-teaser", data-filename="FSFSA-teaser", data-number="2")
+							h2 Futebol Mania Brazil &mdash; Teaser
+							p  Computer game site
+							p UI design, Styleguide, Creative direction
+							.button View Details
 
-				li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
-					img(src="img/fb-msa/cover.jpg")
-					a.info(href="#fb-msa", data-filename="fb-msa", data-number="8")
-						h2 Facebook Game &mdash; MapleStory Adventure
-						p UI for Facebook game
-						p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
-						.button View Details
+					li(data-type="computer game, UI design, Styleguide, Creative direction, Play button creation, 2014")
+						img(src="img/farawaykingdom/cover.jpg")
+						a.info(href="#farawaykingdom", data-filename="farawaykingdom", data-number="3")
+							h2 Faraway Kingdom Mobile game site
+							p Mobile game promotion site
+							p computer game, UI design, Styleguide, Creative direction, Play button creation, 2014
+							.button View Details
 
-				li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
-					img(src="img/fb-zombie/cover.jpg")
-					a.info(href="#fb-zombie", data-filename="fb-zombie", data-number="8")
-						h2 Facebook Game &mdash; Zombie Misfits
-						p UI for Facebook game
-						p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
-						.button View Details
+					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
+						img(src="img/fb_wondercruise/cover.jpg")
+						a.info(href="#fb_wondercruise", data-filename="fb_wondercruise", data-number="7")
+							h2 Facebook Game &mdash; Wonder Cruise
+							p UI for Facebook game
+							p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
+							.button View Details
 
-				li(data-type="corporate site, company information, single page design, 2014")
-					img(src="img/fbar/cover.jpg")
-					a.info(href="#fbar", data-filename="fbar", data-number="2")
-						h2 FBAR I FATCA
-						p Corporate site, Company information, Single page design, 2014
-						.button View Details
+					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
+						img(src="img/fb-msa/cover.jpg")
+						a.info(href="#fb-msa", data-filename="fb-msa", data-number="8")
+							h2 Facebook Game &mdash; MapleStory Adventure
+							p UI for Facebook game
+							p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/jclawcpa/cover.jpg")
-					a.info(href="#jclawcpa", data-filename="jclawcpa", data-number="4")
-						h2 JC Company
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
+						img(src="img/fb-zombie/cover.jpg")
+						a.info(href="#fb-zombie", data-filename="fb-zombie", data-number="8")
+							h2 Facebook Game &mdash; Zombie Misfits
+							p UI for Facebook game
+							p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/jjmural/cover.jpg")
-					a.info(href="#jjmural", data-filename="jjmural", data-number="8")
-						h2 JJ Mural
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="corporate site, company information, single page design, 2014")
+						img(src="img/fbar/cover.jpg")
+						a.info(href="#fbar", data-filename="fbar", data-number="2")
+							h2 FBAR I FATCA
+							p Corporate site, Company information, Single page design, 2014
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/pkllp/cover.jpg")
-					a.info(href="#pkllp", data-filename="pkllp", data-number="17")
-						h2 PK LLP
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/jclawcpa/cover.jpg")
+						a.info(href="#jclawcpa", data-filename="jclawcpa", data-number="4")
+							h2 JC Company
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/ms-legend/cover.jpg")
-					a.info(href="#ms-legend", data-filename="ms-legend", data-number="8")
-						h2 MapleStory LEGEND &mdash; Teaser
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/jjmural/cover.jpg")
+						a.info(href="#jjmural", data-filename="jjmural", data-number="8")
+							h2 JJ Mural
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/msa-browse/cover.jpg")
-					a.info(href="#msa-browse", data-filename="msa-browse", data-number="9")
-						h2 MapleStory Adventure &mdash; Teaser
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/pkllp/cover.jpg")
+						a.info(href="#pkllp", data-filename="pkllp", data-number="17")
+							h2 PK LLP
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/msa-landing/cover.jpg")
-					a.info(href="#msa-landing", data-filename="msa-landing", data-number="4")
-						h2 MapleStory &mdash; Landing page
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/ms-legend/cover.jpg")
+						a.info(href="#ms-legend", data-filename="ms-legend", data-number="8")
+							h2 MapleStory LEGEND &mdash; Teaser
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/RP/cover.jpg")
-					a.info(href="#RP", data-filename="RP", data-number="1")
-						h2 GameRage - Gamemoney RP creation
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/msa-browse/cover.jpg")
+						a.info(href="#msa-browse", data-filename="msa-browse", data-number="9")
+							h2 MapleStory Adventure &mdash; Teaser
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/sjc/cover.jpg")
-					a.info(href="#sjc", data-filename="sjc", data-number="6")
-						h2 SJC Law Group
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/msa-landing/cover.jpg")
+						a.info(href="#msa-landing", data-filename="msa-landing", data-number="4")
+							h2 MapleStory &mdash; Landing page
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/foxconnect/cover.jpg")
-					a.info(href="#foxconnect", data-filename="foxconnect", data-number="9")
-						h2 Fox Connect
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/RP/cover.jpg")
+						a.info(href="#RP", data-filename="RP", data-number="1")
+							h2 GameRage - Gamemoney RP creation
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/foxmpa/cover.jpg")
-					a.info(href="#foxmpa", data-filename="foxmpa", data-number="8")
-						h2 Fox Marketing
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/sjc/cover.jpg")
+						a.info(href="#sjc", data-filename="sjc", data-number="6")
+							h2 SJC Law Group
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/channel/cover.jpg")
-					a.info(href="#channel", data-filename="channel", data-number="4")
-						h2 Channeling page
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/foxconnect/cover.jpg")
+						a.info(href="#foxconnect", data-filename="foxconnect", data-number="9")
+							h2 Fox Connect
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/buymescrubs/cover.jpg")
-					a.info(href="#buymescrubs", data-filename="buymescrubs", data-number="4")
-						h2 Buymescrubs
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/foxmpa/cover.jpg")
+						a.info(href="#foxmpa", data-filename="foxmpa", data-number="8")
+							h2 Fox Marketing
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/drxcorp/cover.jpg")
-					a.info(href="#drxcorp", data-filename="drxcorp", data-number="13")
-						h2 DRX Corp
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/channel/cover.jpg")
+						a.info(href="#channel", data-filename="channel", data-number="4")
+							h2 Channeling page
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/drxdrugcompare/cover.jpg")
-					a.info(href="#drxdrugcompare", data-filename="drxdrugcompare", data-number="5")
-						h2 DRX Corp - Drug comparison
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/buymescrubs/cover.jpg")
+						a.info(href="#buymescrubs", data-filename="buymescrubs", data-number="4")
+							h2 Buymescrubs
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/familycom/cover.jpg")
-					a.info(href="#familycom", data-filename="familycom", data-number="5")
-						h2 Disney - Family.com animation widget
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/drxcorp/cover.jpg")
+						a.info(href="#drxcorp", data-filename="drxcorp", data-number="13")
+							h2 DRX Corp
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/lagunabeach/cover.jpg")
-					a.info(href="#lagunabeach", data-filename="lagunabeach", data-number="6")
-						h2 Laguna Beach Jean
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/drxdrugcompare/cover.jpg")
+						a.info(href="#drxdrugcompare", data-filename="drxdrugcompare", data-number="5")
+							h2 DRX Corp - Drug comparison
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/gameUI-checkin/cover.jpg")
-					a.info(href="#gameUI-checkin", data-filename="gameUI-checkin", data-number="8")
-						h2 Laguna Beach Jean
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/familycom/cover.jpg")
+						a.info(href="#familycom", data-filename="familycom", data-number="5")
+							h2 Disney - Family.com animation widget
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/gameUI-santaboo/cover.jpg")
-					a.info(href="#gameUI-santaboo", data-filename="gameUI-santaboo", data-number="4")
-						h2 Laguna Beach Jean
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/lagunabeach/cover.jpg")
+						a.info(href="#lagunabeach", data-filename="lagunabeach", data-number="6")
+							h2 Laguna Beach Jean
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/gameUI-spika/cover.jpg")
-					a.info(href="#gameUI-spika", data-filename="gameUI-spika", data-number="3")
-						h2 Laguna Beach Jean
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/gameUI-checkin/cover.jpg")
+						a.info(href="#gameUI-checkin", data-filename="gameUI-checkin", data-number="8")
+							h2 Laguna Beach Jean
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
-				li(data-type="computer game, UI Design, ")
-					img(src="img/gameUI-thecuriouscase/cover.jpg")
-					a.info(href="#gameUI-thecuriouscase", data-filename="gameUI-thecuriouscase", data-number="4")
-						h2 Laguna Beach Jean
-						p Company information, service areas, portfolios (web design, UI, print), career and contact information.
-						.button View Details
+					li(data-type="computer game, UI Design, ")
+						img(src="img/gameUI-santaboo/cover.jpg")
+						a.info(href="#gameUI-santaboo", data-filename="gameUI-santaboo", data-number="4")
+							h2 Laguna Beach Jean
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
+
+					li(data-type="computer game, UI Design, ")
+						img(src="img/gameUI-spika/cover.jpg")
+						a.info(href="#gameUI-spika", data-filename="gameUI-spika", data-number="3")
+							h2 Laguna Beach Jean
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
+
+					li(data-type="computer game, UI Design, ")
+						img(src="img/gameUI-thecuriouscase/cover.jpg")
+						a.info(href="#gameUI-thecuriouscase", data-filename="gameUI-thecuriouscase", data-number="4")
+							h2 Laguna Beach Jean
+							p Company information, service areas, portfolios (web design, UI, print), career and contact information.
+							.button View Details
 
 
 

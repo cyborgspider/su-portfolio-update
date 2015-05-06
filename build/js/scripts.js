@@ -34,4 +34,26 @@
 		console.log('Please wait while our content is generated.')
 	}
 
+	//Counter animation
+	$('.count').each(function () {
+	    $(this).prop('Counter',0).animate({
+	        Counter: $(this).text()
+	    }, {
+	        duration: 4000,
+	        easing: 'swing',
+	        step: function (now) {
+	            $(this).text(Math.ceil(now));
+	        }
+	    });
+	});	
+
+	//Animated navigation
+	$('.nav-links').on('click', 'a', function(e){
+     	var target = $(this).attr('href'),
+         	targetOffset = $(target).offset().top - 80;
+
+    	e.preventDefault();
+    	$('html,body').animate({scrollTop: targetOffset + 'px'}, 700);
+	})
+
 })();
