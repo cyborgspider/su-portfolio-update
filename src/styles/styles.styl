@@ -11,9 +11,9 @@ $green  = #70d02f
 
 //Styles
 body
-    font-size   12px
-    line-height 18px
-    font-family 'Source Sans Pro', Verdana, sans-serif
+    font-size   14px
+    line-height 22px
+    font-family 'Open Sans', Verdana, sans-serif
     color       #ddd
     height      100%
     background  #f3f3f3
@@ -29,7 +29,7 @@ a
     border-bottom solid 1px #539b23
     box-shadow    0 1px 0 #cfcfcf
     box-sizing    border-box
-    padding       30px 0
+    padding       30px 150px 0 0
     position      fixed
     top           0
     z-index       10
@@ -43,13 +43,15 @@ a
     padding     0
     list-style  none
     font-weight bold
+    font-size   14px
 
     & > li
         float left
 
     & > li > a
-      padding       12px 50px
-      border-radius 20px
+      padding       10px 30px
+      margin-right  20px
+      border-radius 30px
       color         black
       background    transparent
       transition    background 0.2s ease-out, color 0.2s ease-out
@@ -67,12 +69,13 @@ a
     
     & > li 
         float         left
-        width         40px
-        height        40px
+        width         37px
+        height        37px
         border-radius 50%
-        line-height   40px
+        line-height   35px
         background    #000
         text-align    center
+        margin-right  5px
         
     & > li > a
         width   100%
@@ -86,7 +89,7 @@ a
     clear both
     
 .container
-    max-width 1200px
+    width     100%
     margin    0 auto
     position  relative    
     
@@ -96,13 +99,19 @@ a
     color      white
     
     h1
-        font-size   50px
-        line-height 1.5
-        padding-top 490px
+        font-size   45px
+        font-weight 600
+        line-height 1.2
+        padding-top 450px
     
     .left-col
+        column(7/12)
+        margin-left 150px
+        line-height 1.6
+        font-size 16px
+        font-weight 300
     .right-col
-        column(1/2)    
+        column(8/12)    
         
 .counter-box
     position   absolute
@@ -111,9 +120,9 @@ a
     box-sizing border-box
     width      255px
     height     255px
-    top        -20px
-    left       0
-    background blue
+    top        -55px
+    left       150px
+    background-image (src="img/logo-linkedin.png")
     text-align center
     padding    50px 0
     z-index    11
@@ -121,25 +130,29 @@ a
     & > p
         margin 0
         
+.counter-box p
+    font-size 20px
+        
     
 .count
-    font-size 110px
+    font-size 120px
     
 .count-number
     line-height 110px
     font-size   36px
+    font-weight 700
 
 .projects
     clearfix()
     list-style none
-    margin     0
+    margin     50px 130px
     padding    0
 
     & > li
         position   relative
         width      100%
         background #FFF
-        padding 5px
+        padding    5px
         float      left
         border     15px solid #f3f3f3
         box-sizing border-box
@@ -163,6 +176,20 @@ a
     & > li:hover > .info
     & > li:hover > .button
         opacity 1
+
+.experience-wrap
+    background #70d02f
+    width 100%
+    margin 0 150px
+    
+    .left-col
+        column(4/12)
+        margin-left 150px
+        line-height 1.6
+        font-size 16px
+        font-weight 300
+    .right-col
+        column(8/12)  
 
 
 .info
