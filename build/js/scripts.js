@@ -15,10 +15,10 @@
 			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
 		}
 
-		var productTemplate =   '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' + 
-								'<h2>' + projectTitle + '</h2>' + 
+		var productTemplate =   '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+								'<h2>' + projectTitle + '</h2>' +
 								imgArray.join('') + '</div>';
-		
+
 		//Adding to the global content array
 		content.push(productTemplate)
 	});
@@ -45,14 +45,18 @@
 	            $(this).text(Math.ceil(now));
 	        }
 	    });
-	});	
+	});
 
 	//Animated navigation
 	$('.nav-links').on('click', 'a', function(e){
-     	var target = $(this).attr('href'),
+     	var $this        = $(this),
+     		$siblings    = $('.nav-links').find('a'),
+     		target       = $this.attr('href'),
          	targetOffset = $(target).offset().top - 80;
 
     	e.preventDefault();
+    	$siblings.removeClass('active');
+    	$this.addClass('active');
     	$('html,body').animate({scrollTop: targetOffset + 'px'}, 700);
 	})
 
