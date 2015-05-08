@@ -12,7 +12,7 @@
 			imgArray = [];
 
 		for (var i = 1; i <= numberOfImages ; i++){
-			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
+			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + 'imgFormat" alt="" />')
 		}
 
 		var productTemplate =   '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
