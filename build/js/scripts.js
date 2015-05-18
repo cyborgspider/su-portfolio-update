@@ -6,17 +6,19 @@
 	//Go through each INFO block on the page and create an HTML string and put into the content array
 	$('.info').each(function(i){
 		var $this          = $(this),
-			projectTitle   = this.hash.substr(1);
+			projectTitle   = this.hash.substr(1),
+			projectDescription = $this.find('p'),
 			numberOfImages = $this.attr('data-number'),
 			imageFilename  = $this.attr('data-filename'),
 			imgArray = [];
 
 		for (var i = 1; i <= numberOfImages ; i++){
-			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + 'imgFormat" alt="" />')
+			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
 		}
 
 		var productTemplate =   '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
 								'<h2>' + projectTitle + '</h2>' +
+								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								imgArray.join('') + '</div>';
 
 		//Adding to the global content array
