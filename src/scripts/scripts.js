@@ -5,24 +5,48 @@
 
 	//Go through each INFO block on the page and create an HTML string and put into the content array
 	$('.info').each(function(i){
-		var $this          = $(this),
-			projectTitle   = this.hash.substr(1),
+		var $this            = $(this),
+			projectTitle       = this.hash.substr(1),
 			projectDescription = $this.find('p'),
-			numberOfImages = $this.attr('data-number'),
-			imageFilename  = $this.attr('data-filename'),
-			imgArray = [];
+			numberOfImages     = $this.attr('data-number'),
+			imageFilename      = $this.attr('data-filename'),
+			linkBehance        = $this.attr('data-behance') || '',
+			linkLive           = $this.attr('data-live') || '',
+			imgArray           = [];
 
 		for (var i = 1; i <= numberOfImages ; i++){
 			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
 		}
 
-		var productTemplate =   '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+		var productTemplate =  function(){
+			if (!linkBehance && !linkLive){
+				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
 								'<h2>' + projectTitle + '</h2>' +
 								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								imgArray.join('') + '</div>';
+			} else if (!linkLive && linkBehance) {
+				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+								'<h2>' + projectTitle + '</h2>' +
+								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a></p>' +
+								imgArray.join('') + '</div>'
+			} else if (linkLive && !linkBehance) {
+				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+								'<h2>' + projectTitle + '</h2>' +
+								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
+								imgArray.join('') + '</div>'
+			} else {
+				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+								'<h2>' + projectTitle + '</h2>' +
+								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
+								imgArray.join('') + '</div>'
+			}
+		};
 
 		//Adding to the global content array
-		content.push(productTemplate)
+		content.push(productTemplate())
 	});
 	//Here's the code that adds the content to our page.
 	$(content.join('')).appendTo('body');
