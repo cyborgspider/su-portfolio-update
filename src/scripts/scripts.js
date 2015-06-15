@@ -121,11 +121,11 @@
 	         .filter("[href=#"+id+"]").addClass("active");
 
 	       //Handle the fish-hook nav animation
-	       if(id !== 'hero'){
-	       	$('.nav-animation').addClass('active');
-	       } else {
-	       	$('.nav-animation').removeClass('active');
-	       };
+	       // if(id !== 'hero'){
+	       // 	$('.nav-animation').addClass('active');
+	       // } else {
+	       // 	$('.nav-animation').removeClass('active');
+	       // };
 	   }
 
 	});
