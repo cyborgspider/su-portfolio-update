@@ -34,13 +34,25 @@ html
 				//- .nav-animation
 					img(src="img/hook-animation.gif", alt="animation")
 
+		.mobile-nav
+			i.icon-menu
+			i.icon-close
+			ul.mobile-links
+				li: a(href="#hero") Intro
+				li: a(href="#projects") Portfolio
+				li: a(href="#experience") Experience
+				li: a(href="https://www.behance.net/suyeunlee", target="_blank") Behance
+				li: a(href="https://www.linkedin.com/pub/suyeun-lee/1b/a0b/b95", target="_blank") LinkedIn
+
 		.page-content
 			#hero
 			.hero
 				.container
-					.counter-box
-						p This site is evolving
-						.count-number <span class="count">40</span>%
+					//- .counter-box
+					//- 	p This site is evolving
+					//- 	.count-number <span class="count">40</span>%
+
+					img.mobile-img(src="img/ani.gif", alt="Animated Gif")
 
 					.left-col
 						h1 Hello, my name is Suyeun Lee.
@@ -53,7 +65,7 @@ html
 				ul.projects
 					li(data-type="Corporate site, Wireframe, UI design, Contact to client, Self-Management, 2015")
 						img(src="img/pkllp/cover.jpg")
-						a.info(href="#pkllp", data-filename="pkllp", data-number="17", data-behance="https://www.behance.net/gallery/24443815/PK-LLP-Corporate-site-redesign", data-live="http://pkllp.com/")
+						a.info(href="#pkllp", data-filename="pkllp", data-number="17", data-behance="https://www.behance.net/gallery/24443815/PK-LLP-Corporate-site-redesign", data-live="http://pkllp.com/", data-title="PK LLP")
 							h2 PK LLP
 							p Corporate site
 							p Wireframe, UI design, Contact to client, Self-Management, 2015.
@@ -61,7 +73,7 @@ html
 
 					li(data-type="computer game site, UI design, Styleguide, Creative direction, Play button creation, 2014")
 						img(src="img/cfes/cover.jpg")
-						a.info(href="#cfes", data-filename="cfes", data-number="13",  data-behance="https://www.behance.net/gallery/24539801/Game-site-design-CrossFire-Spanish-website", data-live="http://es.crossfire.z8games.com/")
+						a.info(href="#cfes", data-filename="cfes", data-number="13",  data-behance="https://www.behance.net/gallery/24539801/Game-site-design-CrossFire-Spanish-website", data-live="http://es.crossfire.z8games.com/", data-title="Crossfire Español")
 							h2 CrossFire Espa&ntilde;ol
 							p Computer game site, FPS game
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2014
@@ -69,7 +81,7 @@ html
 
 					li(data-type="computer game site, UI design, Styleguide, Creative direction, Play button creation, 2014")
 						img(src="img/lostsaga/cover.jpg")
-						a.info(href="#lostsaga", data-filename="lostsaga", data-number="25", data-behance="https://www.behance.net/gallery/17658991/LostSaga-North-America-site-design", data-live="http://lostsaga.z8games.com/")
+						a.info(href="#lostsaga", data-filename="lostsaga", data-number="25", data-behance="https://www.behance.net/gallery/17658991/LostSaga-North-America-site-design", data-live="http://lostsaga.z8games.com/", data-title="Lost Saga")
 							h2 Lost SAGA North America
 							p Computer game site, Casual game
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2014
@@ -77,7 +89,7 @@ html
 
 					li(data-type="computer game site, UI design, Styleguide, Creative direction, Play button creation, 2013")
 						img(src="img/grandchase/cover.jpg")
-						a.info(href="#grandchase", data-filename="grandchase", data-number="20", data-behance="https://www.behance.net/gallery/18541509/Grand-Chase-Game-site-redesign-proposal")
+						a.info(href="#grandchase", data-filename="grandchase", data-number="20", data-behance="https://www.behance.net/gallery/18541509/Grand-Chase-Game-site-redesign-proposal", data-title="Grand Chase")
 							h2 Grand Chase North America
 							p Computer game site, Casual game
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2013
@@ -85,7 +97,7 @@ html
 
 					li(data-type="Computer game, playbutton creation, visual assets creation, 2014")
 						img(src="img/btn-ah/cover.jpg")
-						a.info(href="#btn-ah", data-filename="btn-ah", data-number="1")
+						a.info(href="#btn-ah", data-filename="btn-ah", data-number="1", data-title="Arcane Hearts Button")
 							h2  Arcane Hearts
 							p Play button creation
 							p playbutton creation, visual assets creation, 2014
@@ -93,7 +105,7 @@ html
 
 					li(data-type="Computer game, playbutton creation, visual assets creation, 2014")
 						img(src="img/btn-gc/cover.jpg")
-						a.info(href="#btn-gc", data-filename="btn-gc", data-number="1")
+						a.info(href="#btn-gc", data-filename="btn-gc", data-number="1", data-title="Grand Chase Button")
 							h2  GrandChase North America
 							p Play button creation
 							p playbutton creation, visual assets creation, 2014
@@ -101,7 +113,7 @@ html
 
 					li(data-type="computer game site, UI design, Styleguide, Creative direction, Play button creation, 2014")
 						img(src="img/FSFSAofficial/cover.jpg")
-						a.info(href="#FSFSAofficial", data-filename="FSFSAofficial", data-number="12", data-behance="https://www.behance.net/gallery/24578045/Game-Website-FUTEBOL-MANIA")
+						a.info(href="#FSFSAofficial", data-filename="FSFSAofficial", data-number="12", data-behance="https://www.behance.net/gallery/24578045/Game-Website-FUTEBOL-MANIA", data-title="Futebol Mania Brazil")
 							h2 Futebol Mania Brazil &mdash; Official
 							p Computer game site, Casual game
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2014
@@ -109,7 +121,7 @@ html
 
 					li(data-type="computer game site, UI design, Styleguide, Creative direction, Play button creation, 2014")
 						img(src="img/FSFSA-teaser/cover.jpg")
-						a.info(href="#FSFSA-teaser", data-filename="FSFSA-teaser", data-number="2", data-behance="https://www.behance.net/gallery/17729587/Futebol-Mania-game-site-teaser", data-live="http://goodmorningsean.com/fsfsa_teaser/br.futebolmania.z8games.com/")
+						a.info(href="#FSFSA-teaser", data-filename="FSFSA-teaser", data-number="2", data-behance="https://www.behance.net/gallery/17729587/Futebol-Mania-game-site-teaser", data-live="http://goodmorningsean.com/fsfsa_teaser/br.futebolmania.z8games.com/", data-title="FSFA Teaser")
 							h2 Futebol Mania Brazil &mdash; Teaser
 							p  Computer game site, Casual game
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2014
@@ -117,7 +129,7 @@ html
 
 					li(data-type="mobile game site, UI design, Styleguide, Creative direction, Play button creation, 2014")
 						img(src="img/farawaykingdom/cover.jpg")
-						a.info(href="#farawaykingdom", data-filename="farawaykingdom", data-number="3", data-behance="https://www.behance.net/gallery/17665761/Mobile-Game-promo-site-_-Faraway-Kingdom", data-live="http://www.playfarawaykingdom.com/")
+						a.info(href="#farawaykingdom", data-filename="farawaykingdom", data-number="3", data-behance="https://www.behance.net/gallery/17665761/Mobile-Game-promo-site-_-Faraway-Kingdom", data-live="http://www.playfarawaykingdom.com/", data-title="Faraway Kingdom")
 							h2 Faraway Kingdom Mobile game site
 							p Mobile game promotion site
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2014
@@ -125,7 +137,7 @@ html
 
 					li(data-type="computer game site, Artwork, UI design, 2012")
 						img(src="img/channel/cover.jpg")
-						a.info(href="#channel", data-filename="channel", data-number="4")
+						a.info(href="#channel", data-filename="channel", data-number="4",data-title="Channel Page")
 							h2 Channeling page
 							p Computer game site
 							p Artwork, UI design, 2012.
@@ -133,15 +145,15 @@ html
 
 					li(data-type="corporate site, company information, single page design, 2014")
 						img(src="img/fbar/cover.jpg")
-						a.info(href="#fbar", data-filename="fbar", data-number="2", data-behance="https://www.behance.net/gallery/24410121/Single-page-design", data-live="http://jclawcpa.com/fbar/" )
-							h2 FBAR I FATCA
+						a.info(href="#fbar", data-filename="fbar", data-number="2", data-behance="https://www.behance.net/gallery/24410121/Single-page-design", data-live="http://jclawcpa.com/fbar/", data-title="FBAR|FATCA Site" )
+							h2 FBAR | FATCA
 							p Corporate site
 							p Wireframe, UI design, Contact to client, Self-Management, 2014.
 							.button View Details
 
 					li(data-type="corporate site, company information, single page design, 2014")
 						img(src="img/locus/cover.jpg")
-						a.info(href="#locus", data-filename="locus", data-number="1")
+						a.info(href="#locus", data-filename="locus", data-number="1", data-title="Locus Tax")
 							h2 LOCUS TAX
 							p Corporate site
 							p Wireframe, UI design, Contact to client, Self-Management, 2014.
@@ -149,13 +161,13 @@ html
 
 					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
 						img(src="img/fb_wondercruise/cover.jpg")
-						a.info(href="#fb_wondercruise", data-filename="fb_wondercruise", data-number="7")
+						a.info(href="#fb_wondercruise", data-filename="fb_wondercruise", data-number="7", data-title="Wonder Cruise FB Game")
 							h2 Facebook Game &mdash; Wonder Cruise
 							p UI for Facebook game
 							p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
 							.button View Details
 
-					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
+					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010", data-title="MapleStory FB Game")
 						img(src="img/fb-msa/cover.jpg")
 						a.info(href="#fb-msa", data-filename="fb-msa", data-number="8")
 							h2 Facebook Game &mdash; MapleStory Adventure
@@ -165,7 +177,7 @@ html
 
 					li(data-type="Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010")
 						img(src="img/fb-zombie/cover.jpg")
-						a.info(href="#fb-zombie", data-filename="fb-zombie", data-number="8")
+						a.info(href="#fb-zombie", data-filename="fb-zombie", data-number="8", data-title="Zombie Misfits FB Game")
 							h2 Facebook Game &mdash; Zombie Misfits
 							p UI for Facebook game
 							p Facebook Game, UI design, Styleguide, Facebook fanpage, Facebook game interface, 2010
@@ -174,13 +186,13 @@ html
 
 					li(data-type="computer game site, Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011.")
 						img(src="img/ms-legend/cover.jpg")
-						a.info(href="#ms-legend", data-filename="ms-legend", data-number="8", data-behance="https://www.behance.net/gallery/8541715/MapleStory-Legends-Teaser-Site")
+						a.info(href="#ms-legend", data-filename="ms-legend", data-number="8", data-behance="https://www.behance.net/gallery/8541715/MapleStory-Legends-Teaser-Site", data-title="MapleStory LEGEND Teaser Site")
 							h2 MapleStory LEGEND &mdash; Teaser
 							P Computer game site
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011.
 							.button View Details
 
-					li(data-type="computer game site, Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011. ")
+					li(data-type="computer game site, Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011.", data-title="MapleStory Adventure Teaser")
 						img(src="img/msa-browse/cover.jpg")
 						a.info(href="#msa-browse", data-filename="msa-browse", data-number="9")
 							h2 MapleStory Adventure &mdash; Teaser
@@ -190,7 +202,7 @@ html
 
 					li(data-type="computer game site, Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011.")
 						img(src="img/msa-landing/cover.jpg")
-						a.info(href="#msa-landing", data-filename="msa-landing", data-number="4")
+						a.info(href="#msa-landing", data-filename="msa-landing", data-number="4", data-title="MapleStory Landing Page")
 							h2 MapleStory &mdash; Landing page
 							P Landing page
 							p Wireframe, UI design, Styleguide, Creative direction, Play button creation, 2011.

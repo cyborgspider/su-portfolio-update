@@ -6,7 +6,8 @@
 	//Go through each INFO block on the page and create an HTML string and put into the content array
 	$('.info').each(function(i){
 		var $this            = $(this),
-			projectTitle       = this.hash.substr(1),
+			projectLink        = this.hash.substr(1),
+			projectTitle       = $this.find('h2').text(),
 			projectDescription = $this.find('p'),
 			numberOfImages     = $this.attr('data-number'),
 			imageFilename      = $this.attr('data-filename'),
@@ -15,29 +16,29 @@
 			imgArray           = [];
 
 		for (var i = 1; i <= numberOfImages ; i++){
-			imgArray.push('<img src="img/' + projectTitle + '/slide-' + i + '.jpg" alt="" />')
+			imgArray.push('<img src="img/' + projectLink + '/slide-' + i + '.jpg" alt="" />')
 		}
 
 		var productTemplate =  function(){
 			if (!linkBehance && !linkLive){
-				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
 								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								imgArray.join('') + '</div>';
 			} else if (!linkLive && linkBehance) {
-				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
 								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a></p>' +
 								imgArray.join('') + '</div>'
 			} else if (linkLive && !linkBehance) {
-				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
 								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								'<p><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
 								imgArray.join('') + '</div>'
 			} else {
-				return '<div class="modal-content mfp-hide" id="'+ projectTitle + '">' +
+				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
 								'<p>' + $(projectDescription[1]).text() + '</p>' +
 								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
@@ -128,6 +129,26 @@
 	       // };
 	   }
 
+	});
+
+	//Mobile menu
+	$('.icon-menu').click(function(){
+		var $this = $(this),
+			  $menu = $this.closest('.mobile-nav');
+		$menu.addClass('-active');
+	});
+	$('.icon-close').click(function(){
+		var $this = $(this),
+			  $menu = $this.closest('.mobile-nav');
+		$menu.removeClass('-active');
+	});
+	$('.mobile-links').on('click', 'a', function(){
+		$('.mobile-nav').removeClass('-active');
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+	  $('html, body').stop().animate({
+	      scrollTop: offsetTop
+	  }, 300);
 	});
 
 })();
