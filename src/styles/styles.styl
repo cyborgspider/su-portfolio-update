@@ -102,12 +102,15 @@ a
 
 .mobile-nav
     padding    15px 0
-    background white
+    background rgba(255, 255, 255, 0.1)
     position   fixed
     top        0
     left       0
     right      0
     z-index    10
+
+    &.-not-hero
+        background rgba(255,255,255,0.7)
 
     @media (min-width:800px)
         display none
@@ -122,12 +125,19 @@ a
             display block
 
 .icon-menu
-    background url(../img/icon-menu.png) no-repeat
     display    block
     width      40px
-    height     27px
     margin     0 auto
     cursor     pointer
+    list-style none
+    padding    0
+
+    & > li
+        width         100%
+        background    #000
+        height        6px
+        border-radius 12px
+        margin-bottom 4px
 
 .icon-close
     background url(../img/icon-close.png) no-repeat
@@ -206,7 +216,6 @@ a
 .hero-img
     margin-left -60px
     width       100%
-    height      auto
 
     @media (min-width:800px)
         width auto
@@ -391,9 +400,8 @@ a
     transition     color 0.2s ease-in-out
     text-transform uppercase
 
-    @media (min-width:800px)
+    @media (min-width:480px)
         display       inline-block
-        margin-bottom 0
 
     &:hover
         color $green

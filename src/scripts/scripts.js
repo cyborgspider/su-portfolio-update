@@ -122,9 +122,9 @@
 
 	       //Handle the fish-hook nav animation
 	       if(id !== 'hero'){
-	       	$('.nav-top-wrap').addClass('-not-hero');
+	       	$('.nav-top-wrap, .mobile-nav').addClass('-not-hero');
 	       } else {
-	       	$('.nav-top-wrap').removeClass('-not-hero');
+	       	$('.nav-top-wrap, .mobile-nav').removeClass('-not-hero');
 	       };
 	   }
 
