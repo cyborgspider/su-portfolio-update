@@ -62,17 +62,17 @@
 	}
 
 	//Counter animation
-	$('.count').each(function () {
-	    $(this).prop('Counter',0).animate({
-	        Counter: $(this).text()
-	    }, {
-	        duration: 4000,
-	        easing: 'swing',
-	        step: function (now) {
-	            $(this).text(Math.ceil(now));
-	        }
-	    });
-	});
+	// $('.count').each(function () {
+	//     $(this).prop('Counter',0).animate({
+	//         Counter: $(this).text()
+	//     }, {
+	//         duration: 4000,
+	//         easing: 'swing',
+	//         step: function (now) {
+	//             $(this).text(Math.ceil(now));
+	//         }
+	//     });
+	// });
 
 	//Scrollspy (Wayfinder.js)
 	// Cache selectors
@@ -102,7 +102,6 @@
 	$(window).scroll(function(){
 	   // Get container scroll position
 	   var fromTop = $(this).scrollTop()+topMenuHeight;
-	   console.log(id);
 
 	   // Get id of current scroll item
 	   var cur = scrollItems.map(function(){
@@ -122,11 +121,11 @@
 	         .filter("[href=#"+id+"]").addClass("active");
 
 	       //Handle the fish-hook nav animation
-	       // if(id !== 'hero'){
-	       // 	$('.nav-animation').addClass('active');
-	       // } else {
-	       // 	$('.nav-animation').removeClass('active');
-	       // };
+	       if(id !== 'hero'){
+	       	$('.nav-top-wrap').addClass('-not-hero');
+	       } else {
+	       	$('.nav-top-wrap').removeClass('-not-hero');
+	       };
 	   }
 
 	});

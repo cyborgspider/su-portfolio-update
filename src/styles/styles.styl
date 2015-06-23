@@ -7,7 +7,7 @@ normalize-css()
 //Variables
 $yellow = #faee4e
 $red    = #d80000
-$green  = #6FCE2F
+$green  = #00d084
 
 //Styles
 body
@@ -22,30 +22,34 @@ a
     text-decoration none
 
 .nav-top-wrap
-    background    linear-gradient(#fff 50%, #f2f3f2 80%)
-    display       none
-    height        80px
-    width         100%
-    border-bottom solid 1px #539b23
-    box-shadow    0 1px 0 #66be2b
-    box-sizing    border-box
-    padding       30px 5%
-    position      fixed
-    top           0
-    z-index       10
+    background rgba(255,255,255,0.1)
+    display    none
+    height     80px
+    width      100%
+    box-sizing border-box
+    padding    30px 5%
+    position   fixed
+    top        0
+    z-index    10
+    transition background 0.2s ease-in-out
+
     @media (min-width:800px)
         display block
 
     h1
         display none
 
+    &.-not-hero
+        background rgba(255,255,255,0.7)
+
 .nav-links
-    float       right
-    margin      0 12px 0 0
-    padding     0
-    list-style  none
-    font-weight bold
-    font-size   14px
+    float          left
+    margin         0 12px 0 0
+    padding        0
+    list-style     none
+    font-weight    700
+    font-size      14px
+    text-transform uppercase
 
     & > li
         float left
@@ -169,85 +173,43 @@ a
     position  relative
 
 .hero
-    background $green
-    min-height 550px
+    background linear-gradient(to bottom, #2a1d36 0%, #11475a 50%, #008a58 100%)
     color      white
-    padding    80px 5% 0
+    padding    80px 0 20px
+    text-align center
+    @media (min-width:800px)
+        padding-bottom 80px
 
-    @media screen and (min-width:1600px)
-        min-height 780px
-
-    @media screen and (min-width:2000px)
-        min-height 850px
+    & > .container
+        max-width  980px
+        box-sizing border-box
+        padding    0 24px
 
     h1
-        font-size   32px
+        font-size   70px
         font-weight 600
         line-height 1.2
-
-        @media screen and (min-width:800px)
-            padding-top 180px
-
-
-        @media screen and (min-width:1600px)
-            font-size 50px
-            padding-top 350px
-
-        @media screen and (min-width:2000px)
-            font-size 60px
-            padding-top 330px
-
-
-    .left-col
-        line-height 1.6
-        font-size   16px
-        font-weight 300
-        box-sizing  border-box
-        position    relative
-        padding-bottom 30px
-        //          padding-left 150px
+        margin      0
 
         @media (min-width:800px)
-            span(1/2)
-            padding-bottom 0
+            font-size 90px
 
-        @media screen and (min-width:1024px)
-            font-size    14px
-            line-height  1.6
-
-        @media screen and (min-width:1600px)
-            font-size    18px
-            line-height  1.8
-
-        @media screen and (min-width:2000px)
-            font-size    20px
-            line-height  1.8
-
-    .right-col
-        position relative
-        min-height 550px
-        display none
+    p
+        font-weight   500
+        font-size     16px
+        line-height   1.5
+        margin-bottom 30px
 
         @media (min-width:800px)
-            span(1/2)
-            display block
+            font-size 20px
 
-        @media screen and (min-width:1600px)
-            min-height 780px
+.hero-img
+    margin-left -60px
+    width       100%
+    height      auto
 
-        @media screen and (min-width:2000px)
-            min-height 850px
-
-
-        & > img
-            width    100%
-            height   auto
-            position absolute
-            bottom   0
-            right    0
-
-            @media screen and (min-width:2000px)
-                width    auto
+    @media (min-width:800px)
+        width auto
 
 .counter-box
     position         absolute
@@ -283,7 +245,6 @@ a
 
     @media screen and (min-width:1600px)
         font-size 120px
-
 
 .count-number
     line-height 55px
@@ -418,16 +379,17 @@ a
         padding 0 23% 0 0
 
 .big-button
-    background    #000
-    display       block
-    margin-bottom 20px
-    text-align    center
-    color         #fff
-    font-size     20px
-    padding       20px 30px
-    border-radius 30px
-    margin-left   20px
-    transition    color 0.2s ease-in-out
+    background     #000
+    display        block
+    margin-bottom  20px
+    text-align     center
+    color          #fff
+    font-size      16px
+    padding        12px 30px
+    border-radius  30px
+    margin-left    20px
+    transition     color 0.2s ease-in-out
+    text-transform uppercase
 
     @media (min-width:800px)
         display       inline-block
@@ -439,7 +401,7 @@ a
 
 
 .experience-wrap
-    background $green
+    background #008a58
     position   relative
     padding    0 5% 100px
 
