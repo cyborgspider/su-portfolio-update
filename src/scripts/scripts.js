@@ -99,6 +99,9 @@
 	});
 
 	// Bind to scroll
+	$(window).resize(function(){
+		$('.hero-gradient').css('height',$('.hero').outerHeight());
+	});
 	$(window).scroll(function(){
 	   // Get container scroll position
 	   var fromTop = $(this).scrollTop()+topMenuHeight;

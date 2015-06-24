@@ -250,21 +250,28 @@ a
 .hero-img
     width    100%
     position relative
-    height   422px
+    height   200px
+
+    @media (min-width:400px)
+        height 300px
+
+    @media (min-width:600px)
+        height 422px
 
     & > img
-        position  absolute
-        z-index   0
-        opacity   0
-        transform translateX(-55%)
+        position   absolute
+        z-index    0
+        opacity    0
+        transform  translateX(-55%)
         transition opacity 0.8s ease-in-out
+        width      100%
 
         &.-active
             z-index 1
             opacity 1
 
-    @media (min-width:800px)
-        width auto
+        @media (min-width:800px)
+            width auto
 
 .counter-box
     position         absolute
