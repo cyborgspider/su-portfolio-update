@@ -183,10 +183,21 @@ a
     position  relative
 
 .hero
-    background linear-gradient(to bottom, #2a1d36 0%, #11475a 50%, #008a58 100%)
+    background linear-gradient(to bottom, #33cccc 0%, #33cc99 50%, #009966 100%)
     color      white
     padding    80px 0 20px
     text-align center
+    transition background 0.8s ease-in-out
+
+    &.hero-0
+        background linear-gradient(to bottom, #33cccc 0%, #33cc99 50%, #009966 100%)
+
+    &.hero-1
+        background linear-gradient(to bottom, #ff9c4d 0%, #19cbbc 50%, #009966 100%)
+
+    &.hero-2
+        background linear-gradient(to bottom, #2a1d36 0%, #11475a 50%, #009966 100%)
+
     @media (min-width:800px)
         padding-bottom 80px
 
@@ -214,8 +225,20 @@ a
             font-size 20px
 
 .hero-img
-    margin-left -60px
-    width       100%
+    width    100%
+    position relative
+    height   422px
+
+    & > img
+        position  absolute
+        z-index   0
+        opacity   0
+        transform translateX(-55%)
+        transition opacity 0.4s ease-in-out
+
+        &.-active
+            z-index 1
+            opacity 1
 
     @media (min-width:800px)
         width auto

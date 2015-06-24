@@ -150,4 +150,23 @@
 	  }, 300);
 	});
 
+	//Hero image transitioning
+	var slideIndex = -1;
+	function owlSlideshow(){
+		if (slideIndex < 2){
+			slideIndex+=1;
+		} else {
+			slideIndex = 0;
+		}
+		$('.hero-img > img').eq(slideIndex-1).removeClass('-active');
+		$('.hero-img > img').eq(slideIndex).addClass('-active');
+		setTimeout(owlSlideshow, 5000);
+	}
+	function heroBG(){
+		$('.hero').removeClass('hero-'+slideIndex-1).end().addClass('hero-'+slideIndex);
+		//setTimeout(heroBG, 4000);
+	}
+	owlSlideshow();
+	//heroBG();
+
 })();

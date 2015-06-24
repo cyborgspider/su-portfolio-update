@@ -50,13 +50,17 @@ html
 
 		.page-content
 			#hero
-			.hero
+			.hero.hero-0
 				.container
 					//- .counter-box
 					//- 	p This site is evolving
 					//- 	.count-number <span class="count">40</span>%
 
-					img.hero-img(src="img/hero-owl.png", alt="Beautiful Owl")
+					.hero-img
+						img.-active(src="img/hero-owl-1.png", alt="Day Owl")
+						img(src="img/hero-owl-2.png", alt="Noon Owl")
+						img(src="img/hero-owl-3.png", alt="Night Owl")
+
 					h1 Hello
 					p My name is Suyeun Lee, UI &amp; Visual designer. This site showcases my work and experiences. Feel free to check out my work and contact me for opportunities via email or social channels.
 					a.big-button(href="download/resume2015.pdf", target="_blank") Download Resume
