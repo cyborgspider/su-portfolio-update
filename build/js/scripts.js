@@ -153,6 +153,7 @@
 	//Hero image transitioning
 	var slideIndex    = -1;
 	var gradientIndex = -1;
+	$('.hero-gradient').css('height',$('.hero').outerHeight());
 
 	function owlSlideshow(){
 		if (slideIndex < 2){
