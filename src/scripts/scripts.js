@@ -163,20 +163,21 @@
 		}
 		$('.hero-img > img').eq(slideIndex-1).removeClass('-active');
 		$('.hero-img > img').eq(slideIndex).addClass('-active');
+		$('.hero-gradient > div').eq(slideIndex-1).removeClass('-active');
+		$('.hero-gradient > div').eq(slideIndex).addClass('-active');
 		setTimeout(owlSlideshow, 5000);
 	}
-	function heroBG(){
-		if (gradientIndex < 2){
-			gradientIndex+=1;
-		} else {
-			gradientIndex = 0;
-		}
-		$('.hero-gradient > div').eq(gradientIndex-1).removeClass('-active');
-		$('.hero-gradient > div').eq(gradientIndex).addClass('-active');
-		setTimeout(heroBG, 4000);
-		console.log(gradientIndex);
-	}
+	// function heroBG(){
+	// 	if (gradientIndex < 2){
+	// 		gradientIndex+=1;
+	// 	} else {
+	// 		gradientIndex = 0;
+	// 	}
+	// 	$('.hero-gradient > div').eq(gradientIndex-1).removeClass('-active');
+	// 	$('.hero-gradient > div').eq(gradientIndex).addClass('-active');
+	// 	setTimeout(heroBG, 5000);
+	//}
 	owlSlideshow();
-	heroBG();
+	//heroBG();
 
 })();
