@@ -436,12 +436,9 @@ a
 
 .button-group
     clearfix()
-    
-    @media (min-width: 800px)
-        col(10/12, offset:2/12)
-    
+    clear both    
     & > .big-button:first-child
-        margin 40px 0 0 0
+        margin-top 40px
 
 .big-button
     background     #000
@@ -453,9 +450,11 @@ a
     font-size      18px
     padding        12px 30px
     border-radius  30px
-    margin-left    20px
     transition     color 0.2s ease-in-out
     text-transform uppercase
+    
+    &:nth-child(2n)
+        margin-left 20px
 
     @media (min-width:480px)
         display inline-block
@@ -510,7 +509,7 @@ a
     color       #000
     font-size   16px
     @media (min-width:800px)
-        col(10/12, offset:2/12)
+        col(7/12)
     
     & > h1
         color          #fff
@@ -537,8 +536,14 @@ a
         line-height     16px
         
 
-            
-.job > h1
+.job-img
+    text-align center
+    padding 40px 0 0
+    @media (min-width:800px)            
+        col(5/12)
+        text-align right
+        padding 0
+        
 
 .view-btn
     background    url(../img/view-btn.png) no-repeat
