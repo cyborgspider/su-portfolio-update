@@ -23,24 +23,24 @@
 			if (!linkBehance && !linkLive){
 				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
-								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p>' + $(projectDescription).text() + '</p>' +
 								imgArray.join('') + '</div>';
 			} else if (!linkLive && linkBehance) {
 				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
-								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p>' + $(projectDescription).text() + '</p>' +
 								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a></p>' +
 								imgArray.join('') + '</div>'
 			} else if (linkLive && !linkBehance) {
 				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
-								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p>' + $(projectDescription).text() + '</p>' +
 								'<p><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
 								imgArray.join('') + '</div>'
 			} else {
 				return '<div class="modal-content mfp-hide" id="'+ projectLink + '">' +
 								'<h2>' + projectTitle + '</h2>' +
-								'<p>' + $(projectDescription[1]).text() + '</p>' +
+								'<p>' + $(projectDescription).text() + '</p>' +
 								'<p><a href="' + linkBehance + '" target="_blank">Larger view from Behance</a><a href="' + linkLive + '" target="_blank">Check out live site</a></p>' +
 								imgArray.join('') + '</div>'
 			}
