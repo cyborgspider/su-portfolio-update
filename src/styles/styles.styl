@@ -443,18 +443,19 @@ a
 .big-button
     background     #000
     display        block
+    margin-left    20px
     margin-bottom  20px
     text-align     center
     color          #fff
-    font-family 'Source Sans Pro', sans-serif
+    font-family    'Source Sans Pro', sans-serif
     font-size      18px
     padding        12px 30px
     border-radius  30px
     transition     color 0.2s ease-in-out
     text-transform uppercase
     
-    &:nth-child(2n)
-        margin-left 20px
+    &:first-child
+        margin-left 0
 
     @media (min-width:480px)
         display inline-block
