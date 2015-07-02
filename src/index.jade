@@ -18,15 +18,6 @@ html
 
 			ga('create', 'UA-61249446-1', 'auto');
 			ga('send', 'pageview');
-		<!-- Google Tag Manager -->
-		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MMT7B3"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-MMT7B3');</script>
-		<!-- End Google Tag Manager -->
 
 	body
 		.nav-top-wrap
@@ -93,7 +84,7 @@ html
 				ul.projects
 					li(data-type="Corporate site, Wireframe, UI design, Contact to client, Self-Management, 2015")
 						img(src="img/pkllp/cover.jpg")
-						a.info(href="#pkllp", data-filename="pkllp", data-number="17", data-behance="https://www.behance.net/gallery/24443815/PK-LLP-Corporate-site-redesign", data-live="http://pkllp.com/", data-title="PK LLP")
+						a.info(href="#pkllp", data-filename="pkllp", data-number="17", data-behance="https://www.behance.net/gallery/24443815/PK-LLP-Corporate-site-redesign", data-live="http://pkllp.com/", data-wireframe='http://google.com', data-title="PK LLP")
 							h2 PK LLP
 							.button View Details
 							//- p Corporate site
@@ -345,4 +336,10 @@ html
 		script(src="//code.jquery.com/jquery-2.0.3.min.js")
 		script(src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js")
 		script(src="js/scripts.js")
+		script.
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-MMT7B3');
 
