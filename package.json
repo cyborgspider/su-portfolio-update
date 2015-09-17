@@ -3,6 +3,7 @@
   "author": "carlos-ortega",
   "version": "0.0.0",
   "devDependencies": {
+    "babel": "^5.8.23",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-copy": "0.0.2",
@@ -12,8 +13,11 @@
     "gulp-sourcemaps": "^1.5.0",
     "gulp-stylus": "^2.0.1",
     "jeet": "^6.1.2",
+    "jquery": "^2.1.4",
     "livereload": "^0.3.7",
-    "nib": "^1.1.0"
+    "magnific-popup": "^1.0.0",
+    "nib": "^1.1.0",
+    "webpack": "^1.12.1"
   },
   "dependencies": {
     "browser-sync": "^2.2.3",
